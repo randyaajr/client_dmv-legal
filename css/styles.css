@@ -396,14 +396,29 @@ hr {
 /* Footer Section */
 
 .footer {
+  color: rgb(48, 48, 48);
   background-color: #fff;
-  padding: 5rem 0;
   font-size: 1rem;
 }
 
-[aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
+.footer h6 {
+  font-weight: 400;
+}
+
+.footer div i {
+  color: rgb(48, 48, 48) !important;
+}
+
+.footer .footer-contact {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer .footer-bottom {
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  padding: 2rem;
+  font-size: 0.8rem;
 }
 
 /*- Disable aos animation delay on mobile devices -*/
