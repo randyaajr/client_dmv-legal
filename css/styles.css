@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html {
   scroll-padding-top: calc(4.5rem - 1px);
@@ -6,7 +6,7 @@ html {
 
 body {
   letter-spacing: 0.0625em;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -23,87 +23,81 @@ hr {
   background-color: #fff !important;
 }
 
-#mainNav .nav-link {
-  color: rgb(48, 48, 48);
-  font-weight: 600;
-}
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.75rem;
-  color: rgb(48, 48, 48);
-  border: 1px solid rgb(48, 48, 48);
-}
-#mainNav .navbar-toggler:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.1rem;
-}
 #mainNav .navbar-brand {
   color: rgb(48, 48, 48) !important;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   padding: 0.9rem 0;
 }
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
-  outline: none;
-  background-color: transparent;
-}
-#mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
-  outline: none;
-  background-color: transparent;
+
+#mainNav .nav-link {
+  color: rgb(48, 48, 48);
+  font-weight: 400;
 }
 
-@media (max-width: 992px) {
-  #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-  }
-  #mainNav .navbar-brand {
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-    color: rgb(48, 48, 48);
-  }
-  #mainNav .nav-link {
-    transition: none;
-    padding: 0.2rem 1.5rem;
-  }
-  #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  #mainNav .nav-link:active {
-    color: #fff;
-  }
-  #mainNav.navbar-shrink {
-    background-color: #fff;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    color: rgb(48, 48, 48);
-  }
-  #mainNav.navbar-shrink .nav-link {
-    color: rgb(48, 48, 48);
-    padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
-  }
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: rgb(48, 48, 48);
-  }
-  #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
-  }
-  #mainNav.navbar-shrink .nav-link.active {
-    color: rgb(48, 48, 48);
-    outline: none;
-    border-bottom: 0.25rem solid rgb(48, 48, 48);
-  }
+#mainNav .navbar-toggler {
+  border: none;
 }
 
-ul .dropdown-menu {
-  margin-right: 100px;
-  left: 85%;
+#mainNav .navbar-toggler:focus,
+#mainNav .navbar-toggler:active,
+#mainNav .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#mainNav .dropdown-item {
+  transition: none;
+  color: rgb(48, 48, 48);
+  padding: 0.2rem 1.5rem;
+}
+
+#mainNav .dropdown-item.active,
+.dropdown-item:active {
+  transition: none;
+  color: #fff;
+  background-color: rgb(48, 48, 48);
+  padding: 0.2rem 1.5rem;
+}
+
+#mainNav .dropdown-item:hover {
+  background-color: rgb(48, 48, 48);
+  color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  text-align: center;
+  font-size: 90%;
+  padding: 0.75rem;
+  color: rgb(48, 48, 48);
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    color: rgb(48, 48, 48);
+    position: relative;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #000;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Buttons */
@@ -157,8 +151,9 @@ ul .dropdown-menu {
   color: #fff;
   font-size: 2.5rem;
   line-height: 2.5rem;
+  font-weight: 300;
   letter-spacing: 0.2rem;
-  text-decoration: underline #fff 0.1rem;
+  text-decoration: underline #fff 0.09rem;
 }
 .masthead h2,
 .masthead .h2 {
@@ -221,6 +216,11 @@ ul .dropdown-menu {
 
 .about-col p {
   text-align: start;
+  padding-top: 1rem;
+}
+
+.about-col p span {
+  text-decoration: underline 0.09rem;
 }
 
 .about-col::after,
@@ -261,6 +261,10 @@ ul .dropdown-menu {
 
 .services-section_col {
   margin-top: 2rem;
+}
+
+.services-section_col .col {
+  margin-top: 6rem;
 }
 
 @media screen and (max-width: 650px) {

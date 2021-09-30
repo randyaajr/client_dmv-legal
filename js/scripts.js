@@ -49,3 +49,21 @@ AOS.init({
     return window.innerWidth < maxWidth;
   },
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // make it as accordion for smaller screens
+  if (window.innerWidth < 992) {
+    // close all inner dropdowns when parent is closed
+    document
+      .querySelectorAll(".navbar .dropdown")
+      .forEach(function (everydropdown) {
+        everydropdown.addEventListener("hidden.bs.dropdown", function () {
+          // after dropdown is hidden, then find all submenus
+          this.querySelectorAll(".submenu").forEach(function (everysubmenu) {
+            // hide every submenu as well
+            everysubmenu.style.display = "none";
+          });
+        });
+      });
+  }
+});
