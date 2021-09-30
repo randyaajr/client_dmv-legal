@@ -111,7 +111,7 @@ hr {
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  border: 0;
+  border: 0.0875rem solid rgb(202, 202, 202);
 }
 
 .btn:hover {
@@ -123,6 +123,10 @@ hr {
   .btn {
     padding: 0.78rem 1rem;
     font-size: 60%;
+  }
+
+  .contact-section .form-group .btn {
+    width: 100%;
   }
 }
 
@@ -241,39 +245,6 @@ hr {
   }
 }
 
-/* Services section*/
-
-#service-nav .container-fluid {
-  padding: 1rem;
-  margin: 4rem 0;
-  width: 100%;
-  background-color: rgb(48, 48, 48) !important;
-}
-
-.services-section {
-  padding: 4rem;
-  margin: 4rem 8rem;
-}
-
-.services-section h1 {
-  padding: 1rem;
-}
-
-.services-section_col {
-  margin-top: 2rem;
-}
-
-.services-section_col .col {
-  margin-top: 6rem;
-}
-
-@media screen and (max-width: 650px) {
-  .services-section {
-    padding: 4rem 1rem;
-    margin: 0;
-  }
-}
-
 /* Contact Section */
 
 .contact-section {
@@ -283,6 +254,10 @@ hr {
 .contact-section .container-fluid {
   background-color: rgb(48, 48, 48);
 }
+
+/* .contact-section .col-sm-6 {
+  margin: 10rem;
+} */
 
 .contact-heading {
   padding: 2rem 0;
@@ -301,22 +276,16 @@ hr {
 .pad-icon a {
   color: #fff !important;
   text-decoration: none;
-  margin-right: 40px;
+  margin: 1rem;
 }
 
-.pad-icon a:active {
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-}
-
-.input-group input:focus {
+.input-group input,
+.input-group textarea:focus {
   border: 1px solid rgb(48, 48, 48);
 }
 
 .links-col {
   margin: auto;
-  padding-left: auto !important;
 }
 
 .links {
@@ -376,9 +345,50 @@ hr {
     padding-left: 0 !important;
   }
 
-  .fab {
-    padding: 1rem;
-    margin: auto !important;
+  .msg-form h6 {
+    font-size: 0.8rem;
+  }
+
+  .pad-icon {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .pad-icon a {
+    margin: 0 2rem;
+  }
+}
+
+/* Services section*/
+
+#service-nav .container-fluid {
+  padding: 1rem;
+  margin: 4rem 0;
+  width: 100%;
+  background-color: rgb(48, 48, 48) !important;
+}
+
+.services-section {
+  padding: 4rem;
+  margin: 4rem 8rem;
+}
+
+.services-section h1 {
+  padding: 1rem;
+}
+
+.services-section_col {
+  margin-top: 2rem;
+}
+
+.services-section_col .col {
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 650px) {
+  .services-section {
+    padding: 4rem 1rem;
+    margin: 0;
   }
 }
 
