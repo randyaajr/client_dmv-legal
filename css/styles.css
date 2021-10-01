@@ -414,11 +414,31 @@ hr {
   padding-bottom: 2rem;
 }
 
+.footer .footer-contact a {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: rgb(48, 48, 48);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer .footer-contact a:hover {
+  color: rgb(97, 97, 97);
+  font-weight: 600;
+}
+
 .footer .footer-bottom {
   color: #fff;
   background-color: rgb(48, 48, 48);
   padding: 2rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+}
+
+.footer .footer-bottom a {
+  text-decoration: none;
 }
 
 /*- Disable aos animation delay on mobile devices -*/
