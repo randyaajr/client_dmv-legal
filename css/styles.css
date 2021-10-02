@@ -16,6 +16,12 @@ hr {
   width: 80%;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+
 /* ======================== Navbar ======================== */
 
 #mainNav {
