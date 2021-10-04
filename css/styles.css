@@ -120,7 +120,7 @@ hr {
 .btn:hover {
   background-color: rgb(48, 48, 48);
   color: #fff;
-  border: 0.0875rem solid rgb(202, 202, 202);
+  border: 0.0875rem solid rgb(48, 48, 48);
 }
 
 @media (max-width: 567px) {
@@ -370,13 +370,6 @@ hr {
 
 /* ======================== Services section ======================== */
 
-#service-nav .container-fluid {
-  padding: 1rem;
-  margin: 4rem 0;
-  width: 100%;
-  background-color: rgb(48, 48, 48) !important;
-}
-
 .services-section {
   padding: 4rem;
   margin: 4rem 8rem;
@@ -398,6 +391,11 @@ hr {
   .services-section {
     padding: 4rem 1rem;
     margin: 0;
+  }
+
+  .services-section h1 {
+    padding: 0;
+    margin-block-start: 2.5rem;
   }
 }
 
