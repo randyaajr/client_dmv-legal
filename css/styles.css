@@ -387,6 +387,26 @@ hr {
   margin-top: 6rem;
 }
 
+.list-group-item {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.list-group-item a {
+  display: block;
+  padding: 2rem;
+  margin: 0;
+  color: #303030 !important;
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  color: #fff !important;
+  background-color: #303030;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 650px) {
   .services-section {
     padding: 4rem 1rem;
