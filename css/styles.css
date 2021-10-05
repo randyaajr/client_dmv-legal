@@ -275,10 +275,6 @@ hr {
   height: 40vh;
 }
 
-#about-section_div h1 {
-  float: left;
-}
-
 .about-section {
   padding: 4rem;
   margin: 0 8rem;
@@ -377,6 +373,7 @@ hr {
 
 .services-section h1 {
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .services-section_col {
