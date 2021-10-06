@@ -376,12 +376,8 @@ hr {
   margin-bottom: 2rem;
 }
 
-.services-section_col {
+.services-section_items {
   margin-top: 2rem;
-}
-
-.services-section_col .col {
-  margin-top: 6rem;
 }
 
 .list-group-item {
