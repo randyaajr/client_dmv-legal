@@ -22,6 +22,44 @@ hr {
   /* make scrollbar transparent */
 }
 
+/* ======================== To Top ======================== */
+
+#toTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #30303062;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 0.25rem;
+  border: 0.063rem solid #fff;
+}
+
+#toTopBtn svg {
+  color: #fff;
+  z-index: 999;
+}
+
+#toTopBtn svg:hover {
+  transform: scale(1.1);
+}
+
+#toTopBtn:hover {
+  background-color: rgba(85, 85, 85, 0.685);
+}
+
+@media all and (max-width: 991px) {
+  #toTopBtn {
+    bottom: 0.2rem;
+    right: 0.2rem;
+  }
+}
+
 /* ======================== Navbar ======================== */
 
 #mainNav {
