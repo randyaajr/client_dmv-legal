@@ -128,9 +128,6 @@ hr {
   .dropdown-menu > li:hover {
     background-color: #000;
   }
-  .dropdown-menu > li:hover > .submenu {
-    display: block;
-  }
 }
 
 @media (max-width: 991px) {
@@ -270,8 +267,8 @@ hr {
 
   .home-section .home-services,
   .home-section .home-contact {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -283,8 +280,8 @@ hr {
 
   .masthead h1,
   .masthead .h1 {
-    font-size: 1.2rem;
-    line-height: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
     letter-spacing: 0.1rem;
   }
 
@@ -292,6 +289,10 @@ hr {
   .masthead .h2 {
     max-width: 30rem;
     font-size: 0.9rem;
+  }
+
+  .home-section .home-title h4 {
+    padding: 1rem;
   }
 
   .home-section .col-sm-6 {
@@ -448,6 +449,11 @@ hr {
     padding: 0;
     margin-block-start: 2.5rem;
   }
+
+  .list-group {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /* ======================== Footer Section ======================== */
@@ -462,8 +468,9 @@ hr {
   font-weight: 400;
 }
 
-.footer div i {
+.footer div a {
   color: rgb(48, 48, 48) !important;
+  text-decoration: none;
 }
 
 .footer .footer-contact {
@@ -471,7 +478,8 @@ hr {
   padding-bottom: 2rem;
 }
 
-.footer .footer-contact a {
+.footer .footer-contact a,
+.footer .footer-contact p {
   display: block;
   margin-block-start: 1rem;
   margin-block-end: 1rem;
