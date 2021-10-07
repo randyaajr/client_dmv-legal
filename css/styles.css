@@ -467,6 +467,7 @@ hr {
 
 .footer .footer-bottom a {
   text-decoration: none;
+  color: #fff !important;
 }
 
 /* ============  Disable aos animation delay on mobile devices ============ */
