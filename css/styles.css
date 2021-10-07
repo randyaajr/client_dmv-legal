@@ -90,25 +90,6 @@ hr {
   box-shadow: none;
 }
 
-#mainNav .dropdown-item {
-  transition: none;
-  color: rgb(48, 48, 48);
-  padding: 0.2rem 1.5rem;
-}
-
-#mainNav .dropdown-item.active,
-.dropdown-item:active {
-  transition: none;
-  color: #fff;
-  background-color: rgb(48, 48, 48);
-  padding: 0.2rem 1.5rem;
-}
-
-#mainNav .dropdown-item:hover {
-  background-color: rgb(48, 48, 48);
-  color: #fff;
-}
-
 #mainNav .navbar-toggler {
   text-align: center;
   font-size: 90%;
@@ -118,24 +99,6 @@ hr {
 
 #mainNav .navbar-toggler:focus {
   outline: none;
-}
-
-@media all and (min-width: 992px) {
-  .dropdown-menu li {
-    color: rgb(48, 48, 48);
-    position: relative;
-  }
-  .dropdown-menu > li:hover {
-    background-color: #000;
-  }
-}
-
-@media (max-width: 991px) {
-  .dropdown-menu .dropdown-menu {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
 /* ======================== Buttons ======================== */
