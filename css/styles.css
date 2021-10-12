@@ -131,7 +131,7 @@ hr {
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 60vh;
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(
@@ -231,13 +231,13 @@ hr {
 
 @media (max-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 80vh;
     padding: 0;
   }
 
   .masthead h1,
   .masthead .h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.1rem;
     letter-spacing: 0.1rem;
   }
